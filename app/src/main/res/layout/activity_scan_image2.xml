@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#DEFDFA"
+    tools:context=".ScanImageActivity">
+    <ImageView
+        android:id="@+id/imagescan"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        android:src="@drawable/imagescan"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+
+        >
+        <Button
+            android:id="@+id/takepicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ambil foto"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/btn_blueyoung"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/scanimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_prim"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terdeteksi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/deteksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tidak terdeteksi"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/cansale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tidak terdeteksi"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/isorganik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tidak terdeteksi"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/probality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tidak terdeteksi"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/pesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tidak terdeteksi"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

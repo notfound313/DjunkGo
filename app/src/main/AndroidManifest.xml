@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maruf.djunkgo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".javaClass.font"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Djunkgo"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Item"></activity>
+        <activity android:name=".MylistActivity" />
+        <activity android:name=".ScanImageActivity" />
+        <activity android:name=".SaleNowActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewPasswordSuccessActivity" />
+        <activity android:name=".NewPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".VerifySuccessActivity" />
+        <activity android:name=".VerifyActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".myitems" />
+        <activity android:name=".store" />
+        <activity android:name=".mitra" />
+        <activity android:name=".myprofil" />
+        <activity android:name=".myitem_sale" />
+        <activity android:name=".myitem_sold" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
